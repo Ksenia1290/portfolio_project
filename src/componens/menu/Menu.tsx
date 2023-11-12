@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 
 export const Menu = () => {
     return (
-<nav>  
+<StyledMenu>
         <ul>
             <li><a href="">Home</a></li>
             <li><a href="">Skills</a></li>
@@ -12,7 +12,7 @@ export const Menu = () => {
             <li><a href="">Testimony</a></li>
             <li><a href="">Contact</a></li>
         </ul>
-        </nav>
+        </StyledMenu> 
     );
 };
 const StyledMenu = styled.nav
