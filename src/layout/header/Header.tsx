@@ -1,24 +1,17 @@
 import React from "react";
+import { styled } from "styled-components";
+import { Logo } from "../../componens/logo/Logo";
+import { Menu } from "../../componens/menu/Menu";
 
 export const Header =() => {
     return (
-       <header>
-        <a href="">
-            <img src="" alt=""/>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Work</a></li>
-                <li><a href="">Testimony</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-       </header>
+    <StyledHeader>
+        <Logo/>
+        <Menu/>
+    </StyledHeader>
     );
 };
 
-const StyledHeader = styled.header `
-
+const StyledHeader = styled.header`
+background-color: #d4ffd3;
 `
