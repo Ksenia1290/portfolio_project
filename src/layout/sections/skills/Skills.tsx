@@ -13,9 +13,6 @@ export const Slills = () => {
               <Skill/>
               <Skill/>
               <Skill/>
-              <Skill/>
-              <Skill/>
-              <Skill/>
            </FlexWrapper>
       </StyledSkills>
     );
