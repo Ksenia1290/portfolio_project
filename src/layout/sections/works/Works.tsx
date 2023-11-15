@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { SectionTitle } from "../../../componens/SectionTitle";
 import { Menu } from "../../../componens/menu/Menu";
+import { FlexWrapper } from "../../../componens/FlexWrapper";
 
 const worksItems =["ALL","LANDING PAGE","REACT","SPA"]
 
@@ -10,6 +11,7 @@ export const Works = () =>{
 <StyledWorks>
       <SectionTitle>My Works</SectionTitle>
       <Menu menuItems={worksItems}/>
+      <FlexWrapper></FlexWrapper>
 </StyledWorks>
     );
 };
