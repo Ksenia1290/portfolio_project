@@ -10,12 +10,12 @@ export const Skills = () => {
        <StyledSkills>
            <SectionTitle>My Skills</SectionTitle>
            <FlexWrapper>
-              <Skill iconId = {"code"} title={"html5"}/>
-              <Skill iconId = {"css"} title={"css"}/>
-              <Skill iconId = {"react"} title={"react"}/>
-              <Skill iconId = {"figma"} title={"figma"}/>
-              <Skill iconId = {"typescript"} title={"typescript"}/>
-              <Skill iconId = {"styledComponents"} title={"styledComponents"}/>
+              <Skill iconId = {"code"} title={"html5"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"}/>
+              <Skill iconId = {"css"} title={"css"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"}/>
+              <Skill iconId = {"react"} title={"react"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"}/>
+              <Skill iconId = {"figma"} title={"figma"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"}/>
+              <Skill iconId = {"typescript"} title={"typescript"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"}/>
+              <Skill iconId = {"styledComponents"} title={"styledComponents"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"}/>
            </FlexWrapper>
       </StyledSkills>
     );
