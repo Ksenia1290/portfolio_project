@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { SectionTitle } from "../../../componens/SectionTitle";
 import { Menu } from "../../../componens/menu/Menu";
 import { FlexWrapper } from "../../../componens/FlexWrapper";
+import { Work } from "./work/Work";
 
 const worksItems =["ALL","LANDING PAGE","REACT","SPA"]
 
@@ -11,7 +12,10 @@ export const Works = () =>{
 <StyledWorks>
       <SectionTitle>My Works</SectionTitle>
       <Menu menuItems={worksItems}/>
-      <FlexWrapper></FlexWrapper>
+      <FlexWrapper>
+        <Work/>
+        <Work/>
+      </FlexWrapper>
 </StyledWorks>
     );
 };
