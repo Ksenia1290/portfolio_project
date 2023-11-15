@@ -10,12 +10,12 @@ export const Skills = () => {
        <StyledSkills>
            <SectionTitle>My Skills</SectionTitle>
            <FlexWrapper>
-              <Skill iconId = {"code"}/>
-              <Skill iconId = {"css"}/>
-              <Skill iconId = {"react"}/>
-              <Skill iconId = {"figma"}/>
-              <Skill iconId = {"typescript"}/>
-              <Skill iconId = {"styledComponents"}/>
+              <Skill iconId = {"code"} title={"html5"}/>
+              <Skill iconId = {"css"} title={"css"}/>
+              <Skill iconId = {"react"} title={"react"}/>
+              <Skill iconId = {"figma"} title={"figma"}/>
+              <Skill iconId = {"typescript"} title={"typescript"}/>
+              <Skill iconId = {"styledComponents"} title={"styledComponents"}/>
            </FlexWrapper>
       </StyledSkills>
     );
