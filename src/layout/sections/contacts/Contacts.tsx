@@ -7,9 +7,9 @@ export const Contact = () =>{
        <StyledContacts>
          <SectionTitle>Contact</SectionTitle>
             <StyledForm>
-               <Field/>
-               <Field/>
-               <Field as = {"textaria"}/>
+               <Field placeholder={"name"}/>
+               <Field placeholder={"subject"}/>
+               <Field placeholder={"message"} as = {"textarea"}/>
             </StyledForm> 
        </StyledContacts>
     );
@@ -26,6 +26,7 @@ const StyledForm = styled.form`
     width:100%;
     display:flex;
     flex-direction:column;
+    gap:10px
 `
 
 const Field = styled.input`
