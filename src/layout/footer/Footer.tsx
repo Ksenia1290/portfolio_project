@@ -5,12 +5,23 @@ import { Icon } from '../../componens/icon/Icon';
 export const Footer = () => {
     return(
      <StyledFooter>
-        <Name>Ksenia</Name>
-        <SocialIconsList>
-       <SocialIconsList>
-           <Icon iconId={"instagram"}/>
-       </SocialIconsList>
-        </SocialIconsList>
+      <Name>Ksenia</Name>
+       <SocialList>
+         <SocialItem>
+          <SocialLink>
+             <Icon iconId={"instagram"}/>
+          </SocialLink>
+          <SocialLink>
+             <Icon iconId={"linkedin"}/>
+          </SocialLink>
+          <SocialLink>
+             <Icon iconId={"telegram"}/>
+          </SocialLink>
+          <SocialLink>
+             <Icon iconId={"vkontakte"}/>
+          </SocialLink>
+         </SocialItem>
+      </SocialList>
         <Copyright>© 2023 Ksenia Baguzova, All Rights Reserved.</Copyright>
      </StyledFooter>
     );
@@ -24,7 +35,13 @@ const Name = styled.span`
 
 `
 
-const SocialIconsList = styled.ul`
+const SocialList = styled.ul`
+
+`
+const SocialItem = styled.li`
+
+`
+const SocialLink = styled.a`
 
 `
 
