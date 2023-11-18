@@ -41,7 +41,7 @@ const Name = styled.span`
 `
 
 const SocialList = styled.ul`
-
+display:flex;
 `
 const SocialItem = styled.li`
 
