@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Icon } from '../../componens/icon/Icon';
+import { FlexWrapper } from '../../componens/FlexWrapper';
 
 export const Footer = () => {
     return(
      <StyledFooter>
-      <Name>Ksenia</Name>
+        <FlexWrapper direction={"column"} align={"center"}>
+        <Name>Ksenia</Name>
        <SocialList>
          <SocialItem>
           <SocialLink>
@@ -23,14 +25,17 @@ export const Footer = () => {
          </SocialItem>
       </SocialList>
         <Copyright>© 2023 Ksenia Baguzova, All Rights Reserved.</Copyright>
+        </FlexWrapper>
+      
      </StyledFooter>
     );
 };
 
 const StyledFooter = styled.footer`
+background-color: #ffd8a5;
+min-height:20vh;
 
 `
-
 const Name = styled.span`
 
 `
