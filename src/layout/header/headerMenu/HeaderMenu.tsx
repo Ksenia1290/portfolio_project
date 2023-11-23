@@ -31,7 +31,7 @@ ul{
 }
 `
 const ListItem = styled.li`
-position:relative;
+position: relative;
 `
 
 const Link = styled.a`
