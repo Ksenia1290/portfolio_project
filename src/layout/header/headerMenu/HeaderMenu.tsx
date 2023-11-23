@@ -31,9 +31,6 @@ ul{
     gap:30px;
 }
 `
-const ListItem = styled.li`
-position: relative;
-`
 
 const Link = styled.a`
 text-align: center;
@@ -49,7 +46,7 @@ left:0;
 display:inline-block;
 height:50%;
 overflow-y: hidden;
-outline:1px solid red;
+//outline:1px solid red;
 color: ${theme.colors.accent};
 
 &+&{
@@ -60,4 +57,17 @@ color: ${theme.colors.accent};
     }
 }
 
+`
+const ListItem = styled.li`
+position: relative;
+
+&:hover{
+    ${Mask} {
+     transform: skewX(12deg) translateX(5px); 
+     &+${Mask} {
+        transform: skewX(12deg) translateX(-5px);
+    }
+    
+}
+}
 `
