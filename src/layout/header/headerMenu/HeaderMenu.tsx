@@ -1,5 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
+import { theme } from "../../../styles/Theme";
 
 
 export const HeaderMenu = (props: {menuItems:Array<string>}) => {
@@ -35,7 +36,6 @@ position: relative;
 `
 
 const Link = styled.a`
-color: #7572D5;
 text-align: center;
 font-family: Josefin Sans, sans-serif;
 font-size: 30px;
@@ -44,5 +44,11 @@ font-weight: 400;
 `
 const Mask = styled.span`
 position:absolute;
-
+top:0;
+left:0;
+display:inline-block;
+height:50%;
+overflow-y: hidden;
+outline:1px solid red;
+color: ${theme.colors.accent};
 `
