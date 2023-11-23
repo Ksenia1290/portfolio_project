@@ -31,6 +31,7 @@ ul{
 }
 `
 const ListItem = styled.li`
+position:relative;
 `
 
 const Link = styled.a`
@@ -42,5 +43,6 @@ font-style: normal;
 font-weight: 400;
 `
 const Mask = styled.span`
+position:absolute;
 
 `
