@@ -2,11 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import photo from '../../../assets/images/photo.jpeg'
 import { FlexWrapper } from "../../../componens/FlexWrapper";
+import { Container } from "../../../componens/Container";
 
 export const Main = () => {
     return (
 <StyledMain>
-    <FlexWrapper align={"center"} justify={"space-around"}>
+    <Container>
+    <FlexWrapper align={"center"} justify={"space-between"}>
     <div>
         <span>Hi There</span>
         <Name>I am Ksenia Baguzova</Name>
@@ -14,13 +16,16 @@ export const Main = () => {
     </div>
     <Photo src={photo} alt=""/>
     </FlexWrapper>
+    </Container>
+    
 </StyledMain>
     );
 };
 
 const StyledMain = styled.div`
-min-height:100;
+min-height:100vh;
 background-color:#1f2d41;
+display:flex;
 `
 
 const Photo = styled.img`
