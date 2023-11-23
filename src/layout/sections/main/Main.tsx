@@ -3,6 +3,7 @@ import styled from "styled-components";
 import photo from '../../../assets/images/photo.jpeg'
 import { FlexWrapper } from "../../../componens/FlexWrapper";
 import { Container } from "../../../componens/Container";
+import { theme } from "../../../styles/Theme";
 
 export const Main = () => {
     return (
@@ -11,7 +12,7 @@ export const Main = () => {
     <FlexWrapper align={"center"} justify={"space-between"}>
     <div>
         <Smalltext>Hi There</Smalltext>
-        <Name>I am Ksenia Baguzova</Name>
+        <Name>I am <span>Ksenia Baguzova</span></Name>
         <MainTitle>A Web Developer</MainTitle>
     </div>
     <Photo src={photo} alt=""/>
@@ -43,6 +44,22 @@ font-size: 50px;
 font-weight: 700;
 letter-spacing: 2.5px;
 margin:10px 0;
+
+span{
+
+    position:relative;
+
+   &::before {
+    content:"";
+    display:inline-block;
+    width:100%;
+    height:20px;
+    background-color:${theme.colors.accent};
+
+    position:absolute;
+    bottom: 0;
+   }
+}
 `
 const Smalltext = styled.h2`
 font-size: 14px;
