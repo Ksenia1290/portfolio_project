@@ -61,9 +61,23 @@ color: ${theme.colors.accent};
 const ListItem = styled.li`
 position: relative;
 
+&::before{
+    content:"";
+    display:inline-block;
+    height:3px;
+    background-color: ${theme.colors.accent};
+
+    position: absolute;
+    top:50%;
+    left:-10px;
+    right:-10px;
+    z-index: 1;
+}
+
 &:hover{
     ${Mask} {
-     transform: skewX(12deg) translateX(5px); 
+     transform: skewX(12deg) translateX(5px);
+     color :${theme.colors.font};
      &+${Mask} {
         transform: skewX(12deg) translateX(-5px);
     }
