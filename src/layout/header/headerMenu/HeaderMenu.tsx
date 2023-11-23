@@ -8,7 +8,15 @@ export const HeaderMenu = (props: {menuItems:Array<string>}) => {
         <ul>
             {props.menuItems.map((item:string,index:number)=> {
              return <ListItem key={index}>
-                       <Link href="">{item}</Link>
+                       <Link href="">
+                        {item}
+                        <Mask>
+                            <span>{item}</span>
+                        </Mask>
+                        <Mask>
+                            <span>{item}</span>
+                        </Mask>
+                       </Link>
                    </ListItem>
             })}
         </ul>
@@ -32,4 +40,7 @@ font-family: Josefin Sans, sans-serif;
 font-size: 30px;
 font-style: normal;
 font-weight: 400;
+`
+const Mask = styled.span`
+
 `

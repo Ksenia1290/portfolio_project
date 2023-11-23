@@ -20,7 +20,7 @@ export const Main = () => {
 
 const StyledMain = styled.div`
 min-height:100;
-background-color:#fff5e7;
+background-color:#1f2d41;
 `
 
 const Photo = styled.img`
