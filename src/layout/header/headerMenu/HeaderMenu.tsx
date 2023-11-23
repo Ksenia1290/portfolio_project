@@ -38,6 +38,7 @@ font-family: Josefin Sans, sans-serif;
 font-size: 30px;
 font-style: normal;
 font-weight: 400;
+color: transparent;
 `
 const Mask = styled.span`
 position:absolute;
@@ -72,9 +73,15 @@ position: relative;
     left:-10px;
     right:-10px;
     z-index: 1;
+
+    transform: scale(0);
 }
 
 &:hover{
+  &::before{
+    transform: scale(1);
+}
+
     ${Mask} {
      transform: skewX(12deg) translateX(5px);
      color :${theme.colors.font};
