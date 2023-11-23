@@ -34,12 +34,15 @@ height:430px;
 object-fit: cover;
 `
 const MainTitle = styled.h1`
+font-size: 27px;
+font-weight: 400;
 `
 const Name = styled.h2`
 font-family: Josefin Sans, sans-serif;
 font-size: 50px;
 font-weight: 700;
 letter-spacing: 2.5px;
+margin:10px 0;
 `
 const Smalltext = styled.h2`
 font-size: 14px;
