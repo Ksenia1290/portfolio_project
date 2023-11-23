@@ -51,4 +51,13 @@ height:50%;
 overflow-y: hidden;
 outline:1px solid red;
 color: ${theme.colors.accent};
+
+&+&{
+    top:50%;
+    span{
+        display:inline-block;
+        transform: translateY(-50%);
+    }
+}
+
 `
