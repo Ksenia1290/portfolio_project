@@ -48,6 +48,7 @@ margin:10px 0;
 span{
 
     position:relative;
+    z-index:0;
 
    &::before {
     content:"";
@@ -58,6 +59,7 @@ span{
 
     position:absolute;
     bottom: 0;
+    z-index:-1;
    }
 }
 `
