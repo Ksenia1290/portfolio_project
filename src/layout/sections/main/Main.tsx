@@ -10,7 +10,7 @@ export const Main = () => {
     <Container>
     <FlexWrapper align={"center"} justify={"space-between"}>
     <div>
-        <span>Hi There</span>
+        <Smalltext>Hi There</Smalltext>
         <Name>I am Ksenia Baguzova</Name>
         <MainTitle>A Web Developer</MainTitle>
     </div>
@@ -36,4 +36,12 @@ object-fit: cover;
 const MainTitle = styled.h1`
 `
 const Name = styled.h2`
+font-family: Josefin Sans, sans-serif;
+font-size: 50px;
+font-weight: 700;
+letter-spacing: 2.5px;
+`
+const Smalltext = styled.h2`
+font-size: 14px;
+font-weight: 400;
 `
