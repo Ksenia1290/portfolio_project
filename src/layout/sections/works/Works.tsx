@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { SectionTitle } from "../../../componens/SectionTitle";
-import { Menu } from "../../../componens/menu/Menu";
 import { FlexWrapper } from "../../../componens/FlexWrapper";
 import { Work } from "./work/Work";
 import socialImg from './../../../assets/images/social network.png'
 import timerImg from './../../../assets/images/new york.png'
 import { Container } from "../../../componens/Container";
+import { TabMenu } from "./tabMenu/TabMenu";
 
 
 
@@ -17,7 +17,7 @@ export const Works = () =>{
 <StyledWorks>
      <Container>
      <SectionTitle>My Works</SectionTitle>
-      <Menu menuItems={worksItems}/>
+      <TabMenu menuItems={worksItems}/>
       <FlexWrapper justify={"space-between"}>
         <Work title={"Social Network"} 
               src={socialImg}
