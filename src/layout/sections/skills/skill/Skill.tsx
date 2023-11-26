@@ -55,5 +55,4 @@ text-transform: uppercase;
 
 const SkillText = styled.p`
 text-align:center;
-line-height:1.4;
 `

@@ -59,6 +59,7 @@ letter-spacing: 1px;
 p {
 font-size: 14px;
 font-weight: 400;
+line-height:1.4;
 }
 
 `
