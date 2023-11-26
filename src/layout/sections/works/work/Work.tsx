@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "../../../../componens/ Link";
+import { theme } from "../../../../styles/Theme";
 
 
 type WorkPropsType = {
@@ -21,9 +23,13 @@ export const Work = (props:WorkPropsType) => {
 };
 
 const StyledWork = styled.div`
-    background-color: #ffe869;
+    background-color: ${theme.colors.secondaryBg};
     max-width:540px;
     width:100%;
+
+    ${Link} {
+padding:10px 0;
+    }
 `
 
 const Image =styled.img`
@@ -32,9 +38,7 @@ height:260px;
 object-fit:cover;
     
 `
-const Link =styled.a`
-    
-`
+
 const Title =styled.h3`
     
 `
