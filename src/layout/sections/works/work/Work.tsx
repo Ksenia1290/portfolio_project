@@ -31,6 +31,10 @@ const StyledWork = styled.div`
 
     ${Link} {
 padding:10px 0;
+
+&+${Link}{
+    margin-left: 20px;
+}
     }
 `
 
