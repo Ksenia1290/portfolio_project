@@ -43,7 +43,8 @@ padding:10px 0;
 const ImageWrapper =styled.div`
     position:relative;
 
-    &::before{
+    &:hover{
+        &::before{
         content:"";
         position:absolute;
         left:0;
@@ -53,6 +54,8 @@ const ImageWrapper =styled.div`
         background:rgba(0,0,0,0.3);
         backdrop-filter: blur(4px);
     }
+    }
+  
 `
 
 
