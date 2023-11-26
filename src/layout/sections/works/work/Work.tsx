@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "../../../../componens/ Link";
+
 
 type WorkPropsType = {
 title:string
@@ -14,8 +14,8 @@ export const Work = (props:WorkPropsType) => {
     <Image src={props.src} alt=""/>
     <Title>{props.title}</Title>
     <Text>{props.text}</Text>
-    <link href={"#"}>demo</link>
-    <link href={"#"}>code</link>
+    <Link href={"#"}>demo</Link>
+    <Link href={"#"}>code</Link>
 </StyledWork>
     );
 };
