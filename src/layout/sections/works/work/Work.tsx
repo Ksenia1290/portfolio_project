@@ -13,7 +13,10 @@ src:string
 export const Work = (props:WorkPropsType) => {
     return(
 <StyledWork>
+    <ImageWrapper>
     <Image src={props.src} alt=""/>
+    </ImageWrapper>
+    
 <Description>
 <Title>{props.title}</Title>
     <Text>{props.text}</Text>
@@ -37,6 +40,21 @@ padding:10px 0;
 }
     }
 `
+const ImageWrapper =styled.div`
+    position:relative;
+
+    &::before{
+        content:"";
+        position:absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        background:rgba(0,0,0,0.3);
+        backdrop-filter: blur(4px);
+    }
+`
+
 
 const Image =styled.img`
 width:100%;
@@ -55,3 +73,5 @@ const Text =styled.p`
 margin: 14px 0 10px;
     
 `
+
+
