@@ -7,7 +7,7 @@ import { theme } from '../../styles/Theme';
 export const Footer = () => {
     return(
      <StyledFooter>
-      
+
         <FlexWrapper direction={"column"} align={"center"}>
         <Name>Ksenia</Name>
        <SocialList>
@@ -60,9 +60,9 @@ background-color: rgba(255, 255, 255, 0.1);
 width: 35px;
 height: 35px;
 
-display:flex;
-justify-content:center;
-align-items:center;
+//display:flex;
+//justify-content:center;
+//align-items:center;
 `
 
 const Copyright = styled.small`
