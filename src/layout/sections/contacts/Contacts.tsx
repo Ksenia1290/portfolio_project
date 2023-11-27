@@ -35,6 +35,11 @@ const StyledForm = styled.form`
     gap:16px;
     margin: 0 auto;
 
+
+    textarea{
+       resize:none;
+       height:155px;
+    }
     `
 
 
@@ -54,5 +59,6 @@ color:${theme.colors.font};
 
 &::placeholder{
    color: ${theme.colors.placeholdeColor};
+   text-transform: capitalize;
 }
 `
