@@ -30,10 +30,15 @@ const StyledForm = styled.form`
     width:100%;
     display:flex;
     flex-direction:column;
-    gap:16px
+    align-items: center;
+    gap:16px;
+    margin: 0 auto;
+
     `
 
 
 const Field = styled.input`
-    
+    width:100%;
+    border: 1px solid #4A4A4A;
+    background: #252527;
 `
