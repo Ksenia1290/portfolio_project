@@ -7,7 +7,8 @@ export const theme ={
         font:"#FFFFFF",
 
         borderColor:" #4A4A4A ",
-
+        
+        placeholdeColor: "#495057"
 
     }
 }

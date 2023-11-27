@@ -49,5 +49,10 @@ font-family: 'Poppins', sans-serif;
 font-size: 12px;
 font-weight: 400;
 letter-spacing: 0.6px;
+
 color:${theme.colors.font};
+
+&::placeholder{
+   color: ${theme.colors.placeholdeColor};
+}
 `
