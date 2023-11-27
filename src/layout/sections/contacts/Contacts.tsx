@@ -62,7 +62,7 @@ color:${theme.colors.font};
    text-transform: capitalize;
 }
 
-&:focus-visible{
-   outline:1px solid ${theme.colors.secondaryBg};
+&:focus-visible {
+   outline: 1px solid ${theme.colors.borderColor};
 }
 `
