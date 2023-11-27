@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Icon } from '../../componens/icon/Icon';
 import { FlexWrapper } from '../../componens/FlexWrapper';
+import { theme } from '../../styles/Theme';
 
 export const Footer = () => {
     return(
@@ -32,12 +33,15 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-background-color: #ffd8a5;
-min-height:20vh;
+background-color: ${theme.colors.primeryBg};
+padding: 40px 0;
 
 `
 const Name = styled.span`
-
+font-family: 'Josefin Sans', sans-serif;
+font-size: 22px;
+font-weight: 700;
+letter-spacing: 3px;
 `
 
 const SocialList = styled.ul`
