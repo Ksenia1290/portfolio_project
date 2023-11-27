@@ -61,4 +61,8 @@ color:${theme.colors.font};
    color: ${theme.colors.placeholdeColor};
    text-transform: capitalize;
 }
+
+&:focus-visible{
+   outline:1px solid ${theme.colors.secondaryBg};
+}
 `
