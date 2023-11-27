@@ -26,12 +26,13 @@ const StyledContacts = styled.section`
 
 
 const StyledForm = styled.form`
-    min-width: 500px;
+    max-width: 540px;
     width:100%;
     display:flex;
     flex-direction:column;
-    gap:10px
-`
+    gap:16px
+    `
+
 
 const Field = styled.input`
     
