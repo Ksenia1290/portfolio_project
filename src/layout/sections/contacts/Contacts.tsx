@@ -2,10 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { SectionTitle } from "../../../componens/SectionTitle";
 import { Button } from "../../../componens/Button";
+import { Container } from "../../../componens/Container";
 
 export const Contact = () =>{
     return(
        <StyledContacts>
+         <Container>
          <SectionTitle>Contact</SectionTitle>
             <StyledForm>
                <Field placeholder={"name"}/>
@@ -13,13 +15,13 @@ export const Contact = () =>{
                <Field placeholder={"message"} as = {"textarea"}/>
                <Button type={"submit"}>Send message</Button>
             </StyledForm> 
+         </Container>
        </StyledContacts>
     );
 };
 
 const StyledContacts = styled.section`
-    min-height: 50;
-   background-color:#fffae1;
+   
 `
 
 
