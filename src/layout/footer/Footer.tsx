@@ -7,6 +7,7 @@ import { theme } from '../../styles/Theme';
 export const Footer = () => {
     return(
      <StyledFooter>
+      
         <FlexWrapper direction={"column"} align={"center"}>
         <Name>Ksenia</Name>
        <SocialList>
@@ -47,12 +48,21 @@ letter-spacing: 3px;
 const SocialList = styled.ul`
 display:flex;
 gap: 30px;
+margin:20px 0;
 `
+
 const SocialItem = styled.li`
 
 `
 const SocialLink = styled.a`
+border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.1);
+width: 35px;
+height: 35px;
 
+display:flex;
+justify-content:center;
+align-items:center;
 `
 
 const Copyright = styled.small`
