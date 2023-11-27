@@ -56,5 +56,8 @@ const SocialLink = styled.a`
 `
 
 const Copyright = styled.small`
-
+text-align: center;
+font-size: 12px;
+font-weight: 400;
+opacity: 0.5;
 `
