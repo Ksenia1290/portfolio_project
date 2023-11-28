@@ -3,9 +3,12 @@ import { styled } from "styled-components";
 import { theme } from "../../../styles/Theme";
 
 
-export const HeaderMenu = (props: {menuItems:Array<string>}) => {
+export const MobileMenu = (props: {menuItems:Array<string>}) => {
     return (
-    <StyledHeaderMenu>
+    <StyledMobileMenu>
+        <BurgerButton>
+          <span></span>
+        </BurgerButton>
         <ul>
             {props.menuItems.map((item:string,index:number)=> {
              return <ListItem key={index}>
@@ -21,10 +24,10 @@ export const HeaderMenu = (props: {menuItems:Array<string>}) => {
                    </ListItem>
             })}
         </ul>
-    </StyledHeaderMenu> 
+    </StyledMobileMenu> 
     );
 };
-const StyledHeaderMenu = styled.nav
+const StyledMobileMenu = styled.nav
 `
 ul{
     display: flex;
@@ -35,6 +38,42 @@ ul{
 @media ${theme.media.tablet}{
 display: none;
 }
+`
+const BurgerButton = styled.button`
+    position:fixed;
+    top:-100px;
+    right:-100px;
+    width:200px;
+    height:200px;
+
+    span{
+        display:block;
+        width:36px;
+        height:2px;
+        color: ${theme.colors.font};
+        position:absolute;
+        left:40px;
+        bottom:50px;
+
+        &::before{
+        content:"";
+        display:block;
+        width:36px;
+        height:2px;
+        color: ${theme.colors.font};
+        position:absolute;
+        transform:translateY(-10px);
+        }
+        &::after{
+        content:"";
+        display:block;
+        width:24px;
+        height:2px;
+        color: ${theme.colors.font};
+        position:absolute;
+        transform:translateY(10px);
+        }
+    }
 `
 
 const Link = styled.a`
