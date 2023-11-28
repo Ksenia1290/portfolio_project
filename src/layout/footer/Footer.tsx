@@ -54,20 +54,21 @@ margin:20px 0;
 const SocialItem = styled.li`
 
 `
+
 const SocialLink = styled.a`
-border-radius: 50%;
 background-color: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
 width: 35px;
 height: 35px;
 
-//display:flex;
-//justify-content:center;
-//align-items:center;
+display:flex;
+justify-content:center;
+align-items:center;
 `
 
 const Copyright = styled.small`
-text-align: center;
 font-size: 12px;
 font-weight: 400;
+text-align: center;
 opacity: 0.5;
 `
