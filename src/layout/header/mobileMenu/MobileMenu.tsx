@@ -45,8 +45,10 @@ export const MobileMenu = (props: {menuItems:Array<string>}) => {
     );
 };
 const StyledMobileMenu = styled.nav`
-@media ${theme.media.tablet}{
 display: none;
+
+@media ${theme.media.tablet}{
+display: block;
 }
 `
 
@@ -81,38 +83,49 @@ const BurgerButton = styled.button <{isOpen:boolean}>`
     right:-100px;
     width:200px;
     height:200px;
+    z-index:9999999;
 
     span{
         display:block;
         width:36px;
         height:2px;
-        color: ${theme.colors.font};
+        background-color: ${theme.colors.font};
         position:absolute;
         left:40px;
         bottom:50px;
 
         ${props=>props.isOpen && css <{isOpen:boolean}>`
-         color: rgba(255,255,255,0);
+        background-color: rgba(255,255,255,0);
         `}
 
-        &::before{
+        &::before {
         content:"";
         display:block;
         width:36px;
         height:2px;
-        color: ${theme.colors.font};
+        background-color: ${theme.colors.font};
         position:absolute;
         transform:translateY(-10px);
         }
-        &::after{
+
+        ${props=>props.isOpen && css <{isOpen:boolean}>`
+        transform: rotate(-45deg) translateY(0);
+       `}
+
+        &::after {
         content:"";
         display:block;
         width:24px;
         height:2px;
-        color: ${theme.colors.font};
+        background-color: ${theme.colors.font};
         position:absolute;
         transform:translateY(10px);
-        }
+
+        ${props=>props.isOpen && css <{isOpen:boolean}>`
+        transform: rotate(45deg) translateY(0);
+        width: 36px;
+       `}
+    }
     }
 `
 

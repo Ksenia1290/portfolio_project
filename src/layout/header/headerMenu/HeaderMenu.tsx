@@ -24,8 +24,8 @@ export const HeaderMenu = (props: {menuItems:Array<string>}) => {
     </StyledHeaderMenu> 
     );
 };
-const StyledHeaderMenu = styled.nav
-`
+const StyledHeaderMenu = styled.nav`
+
 ul{
     display: flex;
     gap:30px;
