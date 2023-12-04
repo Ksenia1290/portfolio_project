@@ -48,7 +48,7 @@ const PhotoWrapper = styled.div`
     top:-24px;
     left:24px;
     z-index: -1;
-    @media ${theme.media.module}{
+    @media ${theme.media.mobile}{
     width:314px;
     height: 414px;  
     }
@@ -60,7 +60,7 @@ width: 350px;
 height:430px;
 object-fit: cover;
 
-@media ${theme.media.module}{
+@media ${theme.media.mobile}{
 width: 310px;
 height:380px;
 }
@@ -99,7 +99,7 @@ span{
    }
 }
 
-@media ${theme.media.module}{
+@media ${theme.media.mobile}{
     margin: 15px 0 22px;
 }
 
