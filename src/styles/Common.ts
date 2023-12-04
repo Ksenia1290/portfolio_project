@@ -6,8 +6,8 @@ type FontPropsType={
     weight?:number
     color? : string
     lineHeight?:number
-    Fmin: number
-    Fmax: number
+    Fmin? : number
+    Fmax? : number
 }
 
 export const font = ({family,weight,color,lineHeight, Fmax, Fmin}: FontPropsType) =>`
