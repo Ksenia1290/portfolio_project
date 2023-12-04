@@ -70,11 +70,11 @@ font-size: 27px;
 font-weight: 400;
 `
 const Name = styled.h2`
-${font ( (family,weight,color,lineHeight,Fmax,Fmin): {family: "Josefin Sans, sans-serif", Weight:700})}
-font-family: Josefin Sans, sans-serif;
-font-size: 50px;
-font-weight: 700;
-letter-spacing: 2.5px;
+${font ({family,weight,color,lineHeight, Fmin, Fmax} : {family: "Josefin Sans, sans-serif", Weight:700, Fmax:50, Fmin:36})}
+//font-family: Josefin Sans, sans-serif;
+//font-size: 50px;
+//font-weight: 700;
+letter-spacing: 0.05em;
 margin:10px 0;
 
 span{
