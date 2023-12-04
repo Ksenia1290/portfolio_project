@@ -36,6 +36,7 @@ display:flex;
 const PhotoWrapper = styled.div`
  position: relative;
  z-index:0;
+ margin-top:65px;
 
  &::before{
     content:"";
@@ -83,6 +84,7 @@ span{
 
     position:relative;
     z-index:0;
+    white-space: nowrap;
 
    &::before {
     content:"";
@@ -96,6 +98,11 @@ span{
     z-index:-1;
    }
 }
+
+@media ${theme.media.module}{
+    margin: 15px 0 22px;
+}
+
 `
 const Smalltext = styled.h2`
 font-size: 14px;
