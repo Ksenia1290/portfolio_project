@@ -100,4 +100,5 @@ span{
 const Smalltext = styled.h2`
 font-size: 14px;
 font-weight: 400;
+
 `
