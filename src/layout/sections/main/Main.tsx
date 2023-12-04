@@ -51,6 +51,8 @@ const PhotoWrapper = styled.div`
     @media ${theme.media.mobile}{
     width:314px;
     height: 414px;  
+    top:-17;
+    left:20px;
     }
  }
 `
