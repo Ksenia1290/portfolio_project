@@ -32,7 +32,7 @@ export const Work = (props:WorkPropsType) => {
 const StyledWork = styled.div`
     background-color: ${theme.colors.secondaryBg};
     max-width:540px;
-    width:100%;
+    width:330px;
 
     ${Link} {
 padding:10px 0;
