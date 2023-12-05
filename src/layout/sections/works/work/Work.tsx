@@ -76,7 +76,7 @@ const ImageWrapper =styled.div`
 
     &:hover{
         &::before{
-        opasity:1;
+        opacity:1;
     }
     ${Button}{
             opacity:1;
