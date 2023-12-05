@@ -33,6 +33,7 @@ const StyledWork = styled.div`
     background-color: ${theme.colors.secondaryBg};
     max-width:540px;
     width:330px;
+    flex-grow:1;
 
     ${Link} {
 padding:10px 0;
