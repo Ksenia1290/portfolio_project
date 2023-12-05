@@ -106,11 +106,12 @@ const BurgerButton = styled.button <{isOpen:boolean}>`
         background-color: ${theme.colors.font};
         position:absolute;
         transform:translateY(-10px);
-        }
+        
 
         ${props=>props.isOpen && css <{isOpen:boolean}>`
         transform: rotate(-45deg) translateY(0);
        `}
+    }
 
         &::after {
         content:"";
@@ -126,7 +127,7 @@ const BurgerButton = styled.button <{isOpen:boolean}>`
         width: 36px;
        `}
     }
-    }
+}
 `
 
 const Link = styled.a`
