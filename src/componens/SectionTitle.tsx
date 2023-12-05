@@ -3,7 +3,7 @@ import { theme } from "../styles/Theme"
 import { font } from "../styles/Common"
 
 export const SectionTitle = styled.h2`
-//{font({family,weight,color,lineHeight,Fmin,Fmax}: {family: "'Josefin Sans', sans-serif",font-weight: 600,})};
+//{font({family,weight,color,lineHeight,Fmin,Fmax}: {family: "'Josefin Sans', sans-serif",font-weight: 600,Fmax:36,Fmin:30})};
 
 
 text-align: center;
@@ -26,5 +26,9 @@ position: relative;
     left: 50%;
     bottom: -30px;
     transform: translateX(-50%);
+
+    @media ${theme.media.mobile}{
+        bottom: -24px;
+    }
 }
 `
