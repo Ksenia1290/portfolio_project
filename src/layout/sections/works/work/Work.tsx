@@ -31,7 +31,7 @@ export const Work = (props:WorkPropsType) => {
 
 const StyledWork = styled.div`
     background-color: ${theme.colors.secondaryBg};
-    max-width:540px;
+   
     width:330px;
     flex-grow:1;
 
@@ -41,6 +41,10 @@ padding:10px 0;
 &+${Link}{
     margin-left: 20px;
 }
+    }
+
+    @media ${theme.media.desktop} {
+    max-width:540px;
     }
 `
 const ImageWrapper =styled.div`
