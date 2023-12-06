@@ -145,6 +145,14 @@ const BurgerButton = styled.button <{isOpen:boolean}>`
     }
 }
 `
+//Desktop
+const DesktopMenu = styled.nav`
+
+ul{
+    display: flex;
+    gap:30px;
+    justify-content:center;
+}`
 
 export const S ={
     Link,
@@ -153,5 +161,5 @@ export const S ={
     MobileMenu,
     MobileMenuPopup,
     BurgerButton,
-
+    DesktopMenu,
 }
