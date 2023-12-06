@@ -4,27 +4,34 @@ import { Icon } from '../../componens/icon/Icon';
 import { FlexWrapper } from '../../componens/FlexWrapper';
 import { theme } from '../../styles/Theme';
 
+const socialItemsData =[
+   {
+      iconId:"instagram",
+   },
+   {
+      iconId:"linkedin",
+   },
+   {
+      iconId:"telegram",
+   },
+   {
+      iconId:"vkontakte",
+   },
+]
+
 export const Footer :React.FC = () => {
     return(
      <StyledFooter>
-
         <FlexWrapper direction={"column"} align={"center"}>
         <Name>Ksenia</Name>
        <SocialList>
-         <SocialItem>
-          <SocialLink>
-             <Icon height={"21px"}  viewBox={"0 0 21px 21px"} iconId={"instagram"}/>
-          </SocialLink>
-          <SocialLink>
-             <Icon height={"21px"}  viewBox={"0 0 21px 21px"}  iconId={"linkedin"}/>
-          </SocialLink>
-          <SocialLink>
-             <Icon height={"21px"}  viewBox={"0 0 21px 21px"}  iconId={"telegram"}/>
-          </SocialLink>
-          <SocialLink>
-             <Icon height={"21px"}  viewBox={"0 0 21px 21px"}  iconId={"vkontakte"}/>
-          </SocialLink>
-         </SocialItem>
+         {socialItemsData.map((s:{iconId:string}, index)=>{
+         return <SocialItem key={index}>
+                  <SocialLink>
+                     <Icon height={"21px"}  viewBox={"0 0 21px 21px"} iconId={s.iconId}/>
+                  </SocialLink>
+                </SocialItem>
+         })}
       </SocialList>
         <Copyright>© 2023 Ksenia Baguzova, All Rights Reserved.</Copyright>
         </FlexWrapper>
