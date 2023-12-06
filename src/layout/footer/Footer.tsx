@@ -4,7 +4,7 @@ import { Icon } from '../../componens/icon/Icon';
 import { FlexWrapper } from '../../componens/FlexWrapper';
 import { theme } from '../../styles/Theme';
 
-export const Footer = () => {
+export const Footer :React.FC = () => {
     return(
      <StyledFooter>
 
