@@ -28,7 +28,6 @@ color: ${theme.colors.accent};
         transform: translateY(-50%);
     }
 }
-
 `
 
 const MenuItem = styled.li`
