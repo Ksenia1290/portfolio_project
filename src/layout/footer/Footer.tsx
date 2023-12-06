@@ -70,6 +70,11 @@ justify-content:center;
 align-items:center;
 
 color: ${theme.colors.accent};
+
+&:hover{
+   color: ${theme.colors.primeryBg };
+   transform:translateY(-4px);
+}
 `
 
 const Copyright = styled.small`
