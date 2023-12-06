@@ -32,7 +32,7 @@ export const Works = () =>{
      <SectionTitle>My Works</SectionTitle>
       <TabMenu menuItems={worksItems}/>
       <FlexWrapper justify={"space-between"} align={"flex-statr"} wrap={"wrap"}>
-       {workData.map((w:{src:any,text:string,title:string}) =>
+       {workData.map((w:{src:any,text:string,title:string}) =>{
        return <Work title={w.title} 
               src={w.src}
               text={w.text}/>
