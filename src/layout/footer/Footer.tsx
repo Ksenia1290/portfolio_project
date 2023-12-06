@@ -43,12 +43,16 @@ font-family: 'Josefin Sans', sans-serif;
 font-size: 22px;
 font-weight: 700;
 letter-spacing: 3px;
+
+@media ${theme.media.mobile}{
+   
+}
 `
 
 const SocialList = styled.ul`
 display:flex;
-gap: 30px;
-margin:20px 0;
+gap: 20px;
+margin:30px 0;
 `
 
 const SocialItem = styled.li`
