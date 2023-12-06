@@ -12,6 +12,19 @@ import { TabMenu } from "./tabMenu/TabMenu";
 
 const worksItems =["ALL","LANDING PAGE","REACT","SPA"]
 
+const workData = [
+    {
+        title:'Social Network',
+        src:socialImg,
+        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    },
+    {
+        title:'Timer',
+        src:timerImg,
+        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim"
+    }
+]
+
 export const Works = () =>{
     return(
 <StyledWorks>
@@ -19,13 +32,12 @@ export const Works = () =>{
      <SectionTitle>My Works</SectionTitle>
       <TabMenu menuItems={worksItems}/>
       <FlexWrapper justify={"space-between"} align={"flex-statr"} wrap={"wrap"}>
-        <Work title={"Social Network"} 
-              src={socialImg}
-              text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit."}/>
-        
-        <Work title={"Timer"} 
-              src={timerImg}
-              text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim"}/>
+       {workData.map((w:{src:any,text:string,title:string}) =>
+       return <Work title={w.title} 
+              src={w.src}
+              text={w.text}/>
+       })}
+
       </FlexWrapper>
      </Container>
 </StyledWorks>
