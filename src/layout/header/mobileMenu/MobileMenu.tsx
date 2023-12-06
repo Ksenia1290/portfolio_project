@@ -5,7 +5,7 @@ import { Menu } from "../menu/Menu";
 
 
 
-export const MobileMenu = (props: {menuItems:Array<string>}) => {
+export const MobileMenu: React.FC<{menuItems:Array<string>}> = (props: {menuItems:Array<string>}) => {
     return (
     <StyledMobileMenu>
         <BurgerButton isOpen={false}>
