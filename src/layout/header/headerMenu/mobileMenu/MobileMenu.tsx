@@ -12,7 +12,7 @@ export const MobileMenu: React.FC<{menuItems:Array<string>}> = (props: {menuItem
            <span></span>
         </S.BurgerButton>
 
-        <S.MobileMenuPopup isOpen={menuIsOpen}>
+        <S.MobileMenuPopup isOpen={menuIsOpen} onClick={()=>{setmenuIsOpen(false)}}>
            <Menu menuItems={props.menuItems}/>
         </S.MobileMenuPopup>
     </S.MobileMenu> 
