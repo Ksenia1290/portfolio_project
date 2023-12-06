@@ -4,6 +4,7 @@ import { theme } from "../../../styles/Theme";
 import { Menu } from "../menu/Menu";
 
 
+
 export const MobileMenu = (props: {menuItems:Array<string>}) => {
     return (
     <StyledMobileMenu>
