@@ -1,23 +1,22 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
 import { FlexWrapper } from "../FlexWrapper";
-import { theme } from "../../styles/Theme";
+import {S} from "./Slider_Styles";
 
-export const Slider = () => {
+export const Slider: React.FC = () => {
     return (
-        <StyledSlider>
+        <S.Slider>
             <FlexWrapper>
-            <Slide>
-                <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</Text>
-                <Name>@ivan ivanow</Name>
-             </Slide>
+            <S.Slide>
+                <S.Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</S.Text>
+                <S.Name>@ivan ivanow</S.Name>
+             </S.Slide>
             </FlexWrapper>
-             <Pagination>
+             <S.Pagination>
               <span> </span>
               <span className={"active"}></span>
               <span> </span>
-             </Pagination>
-        </StyledSlider>
+             </S.Pagination>
+        </S.Slider>
     );
 };
 
