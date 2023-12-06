@@ -4,7 +4,7 @@ import { Button } from "../../../componens/Button";
 import { Container } from "../../../componens/Container";
 import {S} from "./Contacts_Styles";
 
-export const Contact React.FC = () =>{
+export const Contact: React.FC = () =>{
     return(
        <S.Contacts>
          <Container>
