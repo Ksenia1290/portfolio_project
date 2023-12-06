@@ -19,10 +19,8 @@ export const Main = () => {
     <PhotoWrapper>
     <Photo src={photo} alt=""/>
     </PhotoWrapper>
-
     </FlexWrapper>
     </Container>
-    
 </StyledMain>
     );
 };
