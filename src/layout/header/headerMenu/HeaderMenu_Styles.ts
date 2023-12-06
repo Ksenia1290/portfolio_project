@@ -146,7 +146,7 @@ const BurgerButton = styled.button <{isOpen:boolean}>`
 }
 `
 
-//Desktop
+// Desktop
 const DesktopMenu = styled.nav`
 
 ul{
