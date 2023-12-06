@@ -45,7 +45,7 @@ font-weight: 700;
 letter-spacing: 3px;
 
 @media ${theme.media.mobile}{
-   
+
 }
 `
 
@@ -68,6 +68,8 @@ height: 35px;
 display:flex;
 justify-content:center;
 align-items:center;
+
+color: ${theme.colors.accent};
 `
 
 const Copyright = styled.small`
