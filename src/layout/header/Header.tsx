@@ -2,7 +2,7 @@ import React from "react";
 import { Logo } from "../../componens/logo/Logo";
 import { Container } from "../../componens/Container";
 import { FlexWrapper } from "../../componens/FlexWrapper";
-import { HeaderMenu } from "./headerMenu/HeaderMenu";
+import { DesktopMenu } from "./desktopMenu/DesktopMenu";
 import { MobileMenu } from "./mobileMenu/MobileMenu";
 import { S } from "./Header_Styles";
 
@@ -15,7 +15,7 @@ export const Header:React.FC  =() => {
         <Container>
             <FlexWrapper justify={"space-between"} align={"center"}>
             <Logo/>
-            <HeaderMenu menuItems={items}/>
+            <DesktopMenu menuItems={items}/>
             <MobileMenu menuItems={items}/>
             </FlexWrapper>
         </Container>
