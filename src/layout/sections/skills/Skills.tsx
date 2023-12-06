@@ -5,6 +5,39 @@ import { FlexWrapper } from "../../../componens/FlexWrapper";
 import { Skill } from "./skill/Skill";
 import { Container } from "../../../componens/Container";
 
+const skillData = [
+{
+   iconId: "code",
+   title: "html5",
+   description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
+},
+{
+   iconId: "css",
+   title: "css",
+   description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
+},
+{
+   iconId: "react",
+   title: "react",
+   description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
+},
+{
+   iconId: "figma",
+   title: "figma",
+   description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
+},
+{
+   iconId: "typescript",
+   title: "typescript",
+   description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
+},
+{
+   iconId: "styledComponents",
+   title: "styledComponents",
+   description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
+},
+]
+
 export const Skills = () => {
     return(
        <StyledSkills>
