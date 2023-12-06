@@ -4,6 +4,7 @@ import { SectionTitle } from "../../../componens/SectionTitle";
 import { FlexWrapper } from "../../../componens/FlexWrapper";
 import { Skill } from "./skill/Skill";
 import { Container } from "../../../componens/Container";
+import {S} from './skills_Styles';
 
 const skillData = [
 {
@@ -40,7 +41,7 @@ const skillData = [
 
 export const Skills = () => {
     return(
-       <StyledSkills>
+       <S.Skills>
         <Container>
         <SectionTitle>My Skills</SectionTitle>
            <FlexWrapper wrap={"wrap"} justify={"space-between"}>
@@ -53,9 +54,7 @@ export const Skills = () => {
            </FlexWrapper>
         </Container>
            
-      </StyledSkills>
+      </S.Skills>
     );
 };
 
-const StyledSkills = styled.section`
-`
