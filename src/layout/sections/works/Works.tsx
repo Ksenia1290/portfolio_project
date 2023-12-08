@@ -69,8 +69,8 @@ function changeFilterStatus (value: TabsStatusType) {
      <Container>
      <SectionTitle>My Works</SectionTitle>
       <TabMenu tabsItems={tabsItems} 
-               changeFilterStatus={changeFilterStatus}/>
-               currentFilterStatus= {currentFilterStatus}
+               changeFilterStatus={changeFilterStatus}
+               currentFilterStatus= {currentFilterStatus}/>
       <FlexWrapper justify={"space-between"} align={"flex-statr"} wrap={"wrap"}>
        {filteredWorks.map((w:{src:any,text:string,title:string}) =>{
        return <Work title={w.title} 
