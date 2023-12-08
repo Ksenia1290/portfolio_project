@@ -17,6 +17,7 @@ export const Main: React.FC = () => {
         <S.Name>I am <span>Ksenia Baguzova</span></S.Name>
        {/*<S.MainTitle>A Web Developer</S.MainTitle>*/}
         <S.MainTitle>
+            <p>A Web Developer</p>
         <Typewriter
            options={{
              strings: ['A Web Developer','A Frontend Developer'],

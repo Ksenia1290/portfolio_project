@@ -47,6 +47,9 @@ height:380px;
 const MainTitle = styled.h1`
 font-size: 27px;
 font-weight: 400;
+p{
+    display: none;
+}
 //{font({family,weight,color,lineHeight, Fmin, Fmax}: {weight: 400, Fmax:27, Fmin:20})}
 
 `
