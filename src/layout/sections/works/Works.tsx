@@ -52,6 +52,14 @@ if (currentFilterStatus === "landing") {
     filteredWorks = workData.filter(work => work.type === "landing")
 }
 
+if (currentFilterStatus === "react") {
+    filteredWorks = workData.filter(work => work.type === "react")
+}
+
+if (currentFilterStatus === "spa") {
+    filteredWorks = workData.filter(work => work.type === "spa")
+}
+
     return(
 <S.Works>
      <Container>
