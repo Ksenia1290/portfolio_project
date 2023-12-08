@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 import { Link } from "../../../../componens/ Link";
 
 
-export const TabMenu = (props: {tabsItems:Array<{status:"all" | "landing" | "react" | "spa", title:string}>}) => {
+export const TabMenu = (props: {tabsItems:Array<{status:"all" | "landing" | "react" | "spa", title:string}>,changeFilterStatus: (value:"all" | "landing" | "react" | "spa") => void}) => {
     return (
     <StyledTabMenu>
         <ul>

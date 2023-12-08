@@ -60,11 +60,15 @@ if (currentFilterStatus === "spa") {
     filteredWorks = workData.filter(work => work.type === "spa")
 }
 
+function changeFilterStatus (value: "all" | "landing" | "react" | "spa") {
+    setCurrentFilterStatus(value)
+}
+
     return(
 <S.Works>
      <Container>
      <SectionTitle>My Works</SectionTitle>
-      <TabMenu tabsItems={tabsItems}/>
+      <TabMenu tabsItems={tabsItems} changeFilterStatus={changeFilterStatus}/>
       <FlexWrapper justify={"space-between"} align={"flex-statr"} wrap={"wrap"}>
        {filteredWorks.map((w:{src:any,text:string,title:string}) =>{
        return <Work title={w.title} 
