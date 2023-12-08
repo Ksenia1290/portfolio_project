@@ -46,13 +46,20 @@ const workData = [
 ]
 
 export const Works:React.FC = () =>{
+const [currentFilterStatus, setCurrentFilterStatus] = useState("all")
+const filteredWorks = worksData
+
+if (currentFilterStatus === "landing") {
+
+}
+
     return(
 <S.Works>
      <Container>
      <SectionTitle>My Works</SectionTitle>
       <TabMenu tabsItems={tabsItems}/>
       <FlexWrapper justify={"space-between"} align={"flex-statr"} wrap={"wrap"}>
-       {workData.map((w:{src:any,text:string,title:string}) =>{
+       {filteredWorks.map((w:{src:any,text:string,title:string}) =>{
        return <Work title={w.title} 
               src={w.src}
               text={w.text}/>
