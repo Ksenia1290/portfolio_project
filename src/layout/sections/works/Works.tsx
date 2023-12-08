@@ -60,7 +60,7 @@ if (currentFilterStatus === "spa") {
     filteredWorks = workData.filter(work => work.type === "spa")
 }
 
-function changeFilterStatus (value: "all" | "landing" | "react" | "spa") {
+function changeFilterStatus (value: TabsStatusType) {
     setCurrentFilterStatus(value)
 }
 
