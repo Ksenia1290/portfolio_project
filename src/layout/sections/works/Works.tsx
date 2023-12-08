@@ -1,6 +1,4 @@
-import React from "react";
-import styled from "styled-components";
-import { SectionTitle } from "../../../componens/SectionTitle";
+import React, { useState } from "react";
 import { FlexWrapper } from "../../../componens/FlexWrapper";
 import { Work } from "./work/Work";
 import socialImg from './../../../assets/images/social network.png'
@@ -8,6 +6,7 @@ import timerImg from './../../../assets/images/new york.png'
 import { Container } from "../../../componens/Container";
 import { TabMenu } from "./tabMenu/TabMenu";
 import {S} from "./Works_Styles";
+import { SectionTitle } from "../../../componens/SectionTitle";
 
 
 ///const tabsItems =["All","Landing page","React","spa"]
@@ -47,10 +46,10 @@ const workData = [
 
 export const Works:React.FC = () =>{
 const [currentFilterStatus, setCurrentFilterStatus] = useState("all")
-const filteredWorks = worksData
+let filteredWorks = workData
 
 if (currentFilterStatus === "landing") {
-
+    filteredWorks = workData.filter(work => work.type === "landing")
 }
 
     return(
