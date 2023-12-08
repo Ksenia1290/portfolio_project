@@ -22,6 +22,7 @@ export const Main: React.FC = () => {
              strings: ['A Web Developer','A Frontend Developer'],
              autoStart: true,
              loop: true,
+             delay: 50,
   }}
 />
         </S.MainTitle>
