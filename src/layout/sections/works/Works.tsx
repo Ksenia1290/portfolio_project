@@ -4,7 +4,7 @@ import { Work } from "./work/Work";
 import socialImg from './../../../assets/images/social network.png'
 import timerImg from './../../../assets/images/new york.png'
 import { Container } from "../../../componens/Container";
-import { TabMenu } from "./tabMenu/TabMenu";
+import { TabMenu, TabsStatusType } from "./tabMenu/TabMenu";
 import {S} from "./Works_Styles";
 import { SectionTitle } from "../../../componens/SectionTitle";
 
