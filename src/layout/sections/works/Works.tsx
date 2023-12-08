@@ -10,7 +10,7 @@ import { SectionTitle } from "../../../componens/SectionTitle";
 
 
 ///const tabsItems =["All","Landing page","React","spa"]
-const tabsItems: Array<{status:"all" | "landing" | "react" | "spa", title:string}> =[
+const tabsItems: Array<{status:TabsStatusType, title:string}> =[
     {
         title:"All",
         status:"all"
