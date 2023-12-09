@@ -13,7 +13,7 @@ export const Contact: React.FC = () =>{
 
     if(!form.current)return
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+    emailjs.sendForm('service_yqq349p', 'template_r00qp29', form.current, 'm5qnJ7YS6rVBF-cL3')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -24,7 +24,7 @@ export const Contact: React.FC = () =>{
        <S.Contacts>
          <Container>
          <SectionTitle>Contact</SectionTitle>
-            <S.Form>
+            <S.Form ref={form} onSubmit={sendEmail}>
                <S.Field placeholder={"name"}/>
                <S.Field placeholder={"subject"}/>
                <S.Field placeholder={"message"} as = {"textarea"}/>
