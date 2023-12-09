@@ -5,6 +5,7 @@
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.23.3",
+    "@emailjs/browser": "^3.11.0",
     "@pmmmwh/react-refresh-webpack-plugin": "0.5.3",
     "@svgr/webpack": "^8.1.0",
     "@testing-library/jest-dom": "5.14.1",
