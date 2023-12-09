@@ -25,9 +25,9 @@ export const Contact: React.FC = () =>{
          <Container>
          <SectionTitle>Contact</SectionTitle>
             <S.Form ref={form} onSubmit={sendEmail}>
-               <S.Field placeholder={"name"}/>
-               <S.Field placeholder={"subject"}/>
-               <S.Field placeholder={"message"} as = {"textarea"}/>
+               <S.Field placeholder={"name"} name={'user_name'}/>
+               <S.Field placeholder={"subject"} name={'subject'}/>
+               <S.Field placeholder={"message"} as = {"textarea"} name={'message'}/>
                <Button type={"submit"}>Send message</Button>
             </S.Form> 
          </Container>
