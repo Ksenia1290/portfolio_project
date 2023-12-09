@@ -19,6 +19,7 @@ export const Contact: React.FC = () =>{
       }, (error) => {
           console.log(error.text);
       });
+      e.target.reset()
   };
     return(
        <S.Contacts>
