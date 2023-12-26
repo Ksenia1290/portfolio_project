@@ -14,4 +14,4 @@ export const Icon:React.FC<IconPropsType> = (props: IconPropsType) => {
     <use xlinkHref={ `${iconsSprire}#${props.iconId}` } />
 </svg>
     );
-};
+};max-widthmax-width
